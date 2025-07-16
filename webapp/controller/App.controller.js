@@ -3,7 +3,7 @@ sap.ui.define([
 ], (BaseController) => {
   "use strict";
 
-  return BaseController.extend("ehs.ehs141.matrizcumplimiento.controller.App", {
+  return BaseController.extend("ehs.ehs141.matrizcumplimiento.app.controller.App", {
       onInit() {
       }
   });

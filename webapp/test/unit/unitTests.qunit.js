@@ -3,7 +3,7 @@
 QUnit.config.autostart = false;
 
 sap.ui.require([
-	"ehs/ehs141/matrizcumplimiento/test/unit/AllTests"
+	"ehs/ehs141/matrizcumplimiento/app/test/unit/AllTests"
 ], function (Controller) {
 	"use strict";
 	QUnit.start();

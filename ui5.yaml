@@ -2,7 +2,7 @@
 
 specVersion: "3.1"
 metadata:
-  name: ehs.ehs141.matrizcumplimiento
+  name: ehs.ehs141.matrizcumplimiento.app
 type: application
 server:
   customMiddleware:
@@ -29,6 +29,6 @@ server:
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
-        component: ehs.ehs141.matrizcumplimiento
+        component: ehs.ehs141.matrizcumplimiento.app
         ui5Theme: sap_horizon
 
