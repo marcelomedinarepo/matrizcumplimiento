@@ -14,7 +14,7 @@ sap.ui.define([
 			// start the app UI component
 			this.iStartMyUIComponent({
 				componentConfig: {
-					name: "ehs.matriz",
+					name: "ehs.ehs141.matrizcumplimiento",
 					async: true
 				},
 				hash: oOptions.hash,

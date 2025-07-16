@@ -3,7 +3,7 @@ sap.ui.define([
 ], (Controller) => {
     "use strict";
 
-    return Controller.extend("ehs.matriz.controller.Main", {
+    return Controller.extend("ehs.ehs141.matrizcumplimiento.controller.Main", {
         onInit() {
         }
     });

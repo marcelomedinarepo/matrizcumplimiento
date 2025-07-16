@@ -1,7 +1,7 @@
 /*global QUnit*/
 
 sap.ui.define([
-	"ehs/matriz/controller/Main.controller"
+	"ehs/ehs141/matrizcumplimiento/controller/Main.controller"
 ], function (Controller) {
 	"use strict";
 

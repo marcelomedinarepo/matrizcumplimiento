@@ -1,10 +1,10 @@
 sap.ui.define([
     "sap/ui/core/UIComponent",
-    "ehs/matriz/model/models"
+    "ehs/ehs141/matrizcumplimiento/model/models"
 ], (UIComponent, models) => {
     "use strict";
 
-    return UIComponent.extend("ehs.matriz.Component", {
+    return UIComponent.extend("ehs.ehs141.matrizcumplimiento.Component", {
         metadata: {
             manifest: "json",
             interfaces: [

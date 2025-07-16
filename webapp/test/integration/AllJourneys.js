@@ -7,7 +7,7 @@ sap.ui.define([
 
 	Opa5.extendConfig({
 		arrangements: new Startup(),
-		viewNamespace: "ehs.matriz.view.",
+		viewNamespace: "ehs.ehs141.matrizcumplimiento.view.",
 		autoWait: true
 	});
 });

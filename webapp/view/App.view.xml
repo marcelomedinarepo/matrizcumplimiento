@@ -1,4 +1,4 @@
-<mvc:View controllerName="ehs.matriz.controller.App"
+<mvc:View controllerName="ehs.ehs141.matrizcumplimiento.controller.App"
     displayBlock="true"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">

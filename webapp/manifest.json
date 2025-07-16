@@ -1,7 +1,7 @@
 {
     "_version": "1.65.0",
     "sap.app": {
-        "id": "ehs.matriz",
+        "id": "ehs.ehs141.matrizcumplimiento",
         "type": "application",
         "i18n": "i18n/i18n.properties",
         "applicationVersion": {
@@ -60,7 +60,7 @@
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
-                    "bundleName": "ehs.matriz.i18n.i18n"
+                    "bundleName": "ehs.ehs141.matrizcumplimiento.i18n.i18n"
                 }
             },
             "AppJsonModel": {
@@ -89,9 +89,9 @@
                 "transition": "slide",
                 "type": "View",
                 "viewType": "XML",
-                "path": "ehs.matriz.view",
+                "path": "ehs.ehs141.matrizcumplimiento.view",
                 "async": true,
-                "viewPath": "ehs.matriz.view"
+                "viewPath": "ehs.ehs141.matrizcumplimiento.view"
             },
             "routes": [
                 {
@@ -110,7 +110,7 @@
             }
         },
         "rootView": {
-            "viewName": "ehs.matriz.view.App",
+            "viewName": "ehs.ehs141.matrizcumplimiento.view.App",
             "type": "XML",
             "id": "App"
         }
