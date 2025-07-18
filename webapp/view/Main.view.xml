@@ -1,6 +1,63 @@
-<mvc:View controllerName="ehs.ehs141.matrizcumplimiento.app.controller.Main"
+<mvc:View
+    controllerName="ehs.ehs141.matrizcumplimiento.app.controller.Main"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Page
+        id="page"
+        title="Matriz de Cumplimiento">
+
+        <VBox
+            class="sapUiSmallMargin"
+            busy="{AppJsonModel>/busyTree}"
+            busyIndicatorDelay="0">
+
+            <HBox class="sapUiTinyMarginBottom" renderType="Bare">
+
+                <!-- Columna Ubicación -->
+                <VBox class="sapUiSmallMarginEnd">
+                    <Label text="Ubicación:" labelFor="inputUbicacion" />
+                    <Input
+                        id="inputUbicacion"
+                        editable="{= !${AppJsonModel>/busyTree} }"
+                        value="{AppJsonModel>/ubicaciones}"
+                        placeholder="Buscar ubicación"
+                        showValueHelp="true"
+                        valueHelpRequest=".onValueHelpRequest"
+                        width="300px" />
+                </VBox>
+
+                <!-- Columna Dominio -->
+                <VBox class="sapUiSmallMarginEnd">
+                    <Label text="Dominio:" labelFor="multiDominio" />
+                    <MultiComboBox
+                        id="multiDominio"
+                        width="300px"
+                        items="{
+                            path: 'AppJsonModel>/dominios'
+                        }"
+                        selectedKeys="{AppJsonModel>/dominiosSeleccionados}">
+                        <core:Item key="{AppJsonModel>DomainCode}" text="{AppJsonModel>DomainDesc}" />
+                    </MultiComboBox>
+                </VBox>
+
+                <!-- Columna Tipo de Requisito -->
+                <VBox>
+                    <Label text="Tipo de requisito:" labelFor="multiTipoReq" />
+                    <MultiComboBox
+                        id="multiTipoReq"
+                        width="300px"
+                        items="{
+                            path: 'AppJsonModel>/tiposRequisito'
+                        }"
+                        selectedKeys="{AppJsonModel>/tiposRequisitoSeleccionados}">
+                        <core:Item key="{AppJsonModel>RequType}" text="{AppJsonModel>RequTypeDesc}" />
+                    </MultiComboBox>
+                </VBox>
+
+            </HBox>
+
+        </VBox>
     </Page>
 </mvc:View>
